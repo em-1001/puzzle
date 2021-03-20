@@ -49,6 +49,16 @@ void startGame()
 {
 	hideObject(startButton);
 	hideObject(endButton);
+
+	showObject(image[0][0]);
+	showObject(image[0][1]);
+	showObject(image[0][2]);
+	showObject(image[1][0]);
+	showObject(image[1][2]);
+	showObject(image[2][0]);
+	showObject(image[2][1]);
+	showObject(image[2][2]);
+
 	setTimer(timer1, 20.0f);
 	startTimer(timer1);
 
@@ -172,14 +182,14 @@ int main()
 	// x좌표 : 101, 468, 835
 	// y좌표 : 100, 290, 480
 
-	image[0][0] = makeObject("image1.png", scene1, Xcoordin[0][0], Ycoordin[0][0], true);
-	image[0][1] = makeObject("image6.png", scene1, Xcoordin[0][1], Ycoordin[0][1], true);
-	image[0][2] = makeObject("image2.png", scene1, Xcoordin[0][2], Ycoordin[0][2], true);
-	image[1][0] = makeObject("image7.png", scene1, Xcoordin[1][0], Ycoordin[1][0], true);
-	image[1][2] = makeObject("image3.png", scene1, Xcoordin[1][2], Ycoordin[1][2], true);
-	image[2][0] = makeObject("image5.png", scene1, Xcoordin[2][0], Ycoordin[2][0], true);
-	image[2][1] = makeObject("image4.png", scene1, Xcoordin[2][1], Ycoordin[2][1], true);
-	image[2][2] = makeObject("image8.png", scene1, Xcoordin[2][2], Ycoordin[2][2], true);
+	image[0][0] = makeObject("image1.png", scene1, Xcoordin[0][0], Ycoordin[0][0], false);
+	image[0][1] = makeObject("image6.png", scene1, Xcoordin[0][1], Ycoordin[0][1], false);
+	image[0][2] = makeObject("image2.png", scene1, Xcoordin[0][2], Ycoordin[0][2], false);
+	image[1][0] = makeObject("image7.png", scene1, Xcoordin[1][0], Ycoordin[1][0], false);
+	image[1][2] = makeObject("image3.png", scene1, Xcoordin[1][2], Ycoordin[1][2], false);
+	image[2][0] = makeObject("image5.png", scene1, Xcoordin[2][0], Ycoordin[2][0], false);
+	image[2][1] = makeObject("image4.png", scene1, Xcoordin[2][1], Ycoordin[2][1], false);
+	image[2][2] = makeObject("image8.png", scene1, Xcoordin[2][2], Ycoordin[2][2], false);
 
 	timer1 = createTimer(20.0f);
 	showTimer(timer1);
